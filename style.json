@@ -21,7 +21,7 @@
             "attribution": "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
         },
         "openmaptiles": {
-            "url": "https://tile.openstreetmap.jp/data/japan.json",
+            "url": "https://tile.openstreetmap.jp/data/planet.json",
             "type": "vector"
         },
         "gsibv-vectortile-source-1-4-16": {
