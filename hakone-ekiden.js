@@ -5045,7 +5045,7 @@ charts[0] = new Chart('chart-speed', {
 			tooltip: {
 				callbacks: {
 					title: context => `距離 ${context[0].parsed.x.toFixed(2)} km`,
-					label: context => `${context.dataset.label} ${context.parsed.y} km/s`
+					label: context => `${context.dataset.label} ${context.parsed.y} km/h`
 				}
 			},
 			annotation: {
