@@ -4048,14 +4048,14 @@ const trips = [{
 	name: '往路',
 	center: routes[0][0],
 	bearing: 95,
-	startTime: 1641078000000,
+	startTime: 1672614000000,
 	placing: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
 }, {
 	name: '復路',
 	center: routes[1][0],
 	bearing: -50,
-	startTime: 1641164400000,
-	placing: [4, 8, 1, 9, 7, 12, 10, 2, 3, 5, 6, 15, 16, 20, 21, 14, 13, 11, 17, 19, 18]
+	startTime: 1672700400000,
+	placing: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
 }];
 
 const sections = [[
@@ -4077,89 +4077,89 @@ const sections = [[
 const teams = [{
 	name: ''
 }, {
-	name: '駒澤大学',
-	shortName: '駒澤',
-	runners: ['唐澤 拓海 (2年)', '田澤 廉 (3年)', '安原 太陽 (2年)', '花尾 恭輔 (2年)', '金子 伊吹 (2年)', '佃 康平 (4年)', '白鳥 哲汰 (2年)', '鈴木 芽吹 (2年)', '山野 力 (3年)', '青柿 響 (2年)']
-}, {
-	name: '創価大学',
-	shortName: '創価',
-	runners: ['葛西 潤 (2年)', 'Ｐ・ムルワ (3年)', '桑田 大輔 (2年)', '嶋津 雄大 (4年)', '三上 雄太 (4年)', '濱野 将基 (3年)', '新家 裕太郎 (3年)', '吉田 凌 (1年)', '中武 泰希 (4年)', '松田 爽汰 (3年)']
-}, {
-	name: '東洋大学',
-	shortName: '東洋',
-	runners: ['児玉 悠輔 (3年)', '松山 和希 (2年)', '佐藤 真優 (2年)', '木本 大地 (3年)', '宮下 隼人 (4年)', '九嶋 恵舜 (2年)', '梅崎 蓮 (1年)', '蝦夷森 章太 (4年)', '前田 義弘 (3年)', '清野 太雅 (3年)']
-}, {
 	name: '青山学院大学',
 	shortName: '青山学院',
-	runners: ['志貴 勇斗 (2年)', '近藤 幸太郎 (3年)', '太田 蒼生 (1年)', '飯田 貴之 (4年)', '若林 宏樹 (1年)', '髙橋 勇輝 (4年)', '岸本 大紀 (3年)', '佐藤 一世 (2年)', '中村 唯翔 (3年)', '中倉 啓敦 (3年)']
-}, {
-	name: '東海大学',
-	shortName: '東海',
-	runners: ['市村 朋樹 (4年)', '松崎 咲人 (3年)', '神薗 竜馬 (2年)', '本間 敬大 (4年)', '吉田 響 (1年)', '川上 勇士 (3年)', '越 陽汰 (1年)', '入田 優希 (2年)', '竹村 拓真 (3年)', '吉冨 裕太 (4年)']
-}, {
-	name: '早稲田大学',
-	shortName: '早稲田',
-	runners: ['井川 龍人 (3年)', '中谷 雄飛 (4年)', '太田 直希 (4年)', '石塚 陽士 (1年)', '伊藤 大志 (1年)', '栁本 匡哉 (2年)', '鈴木 創士 (3年)', '千明 龍之佑 (4年)', '佐藤 航希 (2年)', '山口 賢助 (4年)']
+	runners: ['目片 将大 (4年)', '近藤 幸太郎 (4年)', '横田 俊吾 (4年)', '黒田 朝日 (1年)', '若林 宏樹 (2年)', '西川 魁星 (4年)', '佐藤 一世 (3年)', '荒巻 朋熙 (1年)', '塩出 翔太 (1年)', '中倉 啓敦 (4年)']
 }, {
 	name: '順天堂大学',
 	shortName: '順天堂',
-	runners: ['平 駿介 (3年)', '三浦 龍司 (2年)', '伊豫田 達弥 (3年)', '石井 一希 (2年)', '四釜 峻佑 (3年)', '牧瀬 圭斗 (4年)', '西澤 侑真 (3年)', '津田 将希 (4年)', '野村 優作 (3年)', '近藤 亮太 (4年)']
+	runners: ['油谷 航亮 (2年)', '堀内 郁哉 (4年)', '伊豫田 達弥 (4年)', '石井 一希 (3年)', '神谷 青輝 (2年)', '村尾 雄己 (1年)', '海老澤 憲伸 (2年)', '平 駿介 (4年)', '藤原 優希 (3年)', '内田 征冶 (3年)']
 }, {
-	name: '帝京大学',
-	shortName: '帝京',
-	runners: ['小野 隆一朗 (2年)', '中村 風馬 (4年)', '遠藤 大地 (4年)', '寺嶌 渓一 (4年)', '細谷 翔馬 (4年)', '北野 開平 (3年)', '福島 渉太 (1年)', '橋本 尚斗 (4年)', '森田 瑛介 (4年)', '西脇 翔太 (2年)']
+	name: '駒澤大学',
+	shortName: '駒澤',
+	runners: ['円 健介 (4年)', '田澤 廉 (4年)', '吉本 真啓 (2年)', '鈴木 芽吹 (3年)', '金子 伊吹 (3年)', '帰山 侑大 (1年)', '安原 太陽 (3年)', '花尾 恭輔 (3年)', '山野 力 (4年)', '青柿 響 (3年)']
 }, {
-	name: '國學院大學',
-	shortName: '國學院',
-	runners: ['藤木 宏太 (4年)', '伊地知 賢造 (2年)', '山本 歩夢 (1年)', '中西 大翔 (3年)', '殿地 琢朗 (4年)', '原 秀寿 (1年)', '木付 琳 (4年)', '石川 航平 (4年)', '平林 清澄 (1年)', '相澤 龍明 (4年)']
+	name: '東洋大学',
+	shortName: '東洋',
+	runners: ['児玉 悠輔 (4年)', '石田 洸介 (2年)', '小林 亮太 (2年)', '柏 優吾 (4年)', '前田 義弘 (4年)', '西村 真周 (1年)', '熊崎 貴哉 (3年)', '網本 佳悟 (1年)', '九嶋 恵舜 (3年)', '清野 太雅 (4年)']
 }, {
 	name: '東京国際大学',
 	shortName: '東京国際',
-	runners: ['山谷 昌也 (3年)', 'Y・ヴィンセント (3年)', '丹所 健 (3年)', '堀畑 佳吾 (3年)', '倉掛 響 (1年)', '林 優策 (2年)', '冨永 昌輝 (1年)', '村松 敬哲 (2年)', '宗像 聖 (3年)', '野澤 巧理 (4年)']
-}, {
-	name: '明治大学',
-	shortName: '明治',
-	runners: ['手嶋 杏丞 (4年)', '鈴木 聖人 (4年)', '児玉 真輝 (2年)', '小澤 大輝 (3年)', '下條 乃將 (3年)', '杉本 龍陽 (3年)', '富田 峻平 (3年)', '櫛田 佳希 (3年)', '加藤 大誠 (3年)', '橋本 大輝 (4年)']
+	runners: ['山谷 昌也 (4年)', '丹所 健 (4年)', '木村 海斗 (2年)', 'Ｌ・ムセンビ (4年)', '川端 拳史 (3年)', '林 優策 (3年)', '山岸 柊斗 (2年)', '川内 琉生 (1年)', '村松 敬哲 (3年)', '堀畑 佳吾 (4年)']
 }, {
 	name: '中央大学',
 	shortName: '中央',
-	runners: ['吉居 大和 (2年)', '手島 駿 (4年)', '三浦 拓朗 (4年)', '中野 翔太 (2年)', '阿部 陽樹 (1年)', '若林 陽大 (3年)', '居田 優太 (2年)', '中澤 雄大 (3年)', '湯浅 仁 (2年)', '井上 大輝 (4年)']
+	runners: ['溜池 一太 (1年)', '佐藤 宏亮 (1年)', '東海林 宏一 (2年)', '吉居 駿恭 (1年)', '阿部 陽樹 (2年)', '若林 陽大 (4年)', '白川 陽大 (1年)', '中澤 雄大 (4年)', '湯浅 仁 (3年)', '助川 拓海 (4年)']
 }, {
-	name: '日本体育大学',
-	shortName: '日本体育',
-	runners: ['髙津 浩揮 (3年)', '藤本 珠輝 (3年)', '大畑 怜士 (4年)', '分須 尊紀 (1年)', '吉冨 純也 (2年)', '盛本 聖也 (3年)', '漆畑 徳輝 (2年)', '九嶋 大雅 (3年)', '大内 宏樹 (4年)', '佐藤 慎巴 (4年)']
+	name: '創価大学',
+	shortName: '創価',
+	runners: ['横山 魁哉 (4年)', 'Ｐ・ムルワ (4年)', '山森 龍暁 (3年)', '嶋津 雄大 (4年)', '野沢 悠真 (1年)', '濱野 将基 (4年)', '葛西 潤 (4年)', '桑田 大輔 (3年)', '緒方 貴典 (4年)', '石丸 惇那 (1年)']
 }, {
-	name: '山梨学院大学',
-	shortName: '山梨学院',
-	runners: ['木山 達哉 (3年)', 'Ｐ・オニエゴ (4年)', '高田 尚暉 (1年)', '伊東 大暉 (3年)', '成毛 志優 (4年)', '矢島 洸一 (4年)', '川口 航士郎 (4年)', '橘田 大河 (3年)', '石部 夏希 (3年)', '篠原 楓 (3年)']
+	name: '國學院大學',
+	shortName: '國學院',
+	runners: ['木村 文哉 (2年)', '川﨑 康生 (4年)', '山本 歩夢 (2年)', '鶴 元太 (2年)', '伊地知 賢造 (3年)', '島﨑 慎愛 (4年)', '上原 琉翔 (1年)', '高山 豪起 (1年)', '坂本 健悟 (4年)', '瀬尾 秀介 (3年)']
 }, {
-	name: '神奈川大学',
-	shortName: '神奈川',
-	runners: ['巻田 理空 (2年)', '西方 大珠 (4年)', '宇津野 篤 (2年)', '小林 政澄 (2年)', '山﨑 諒介 (3年)', '横澤 清己 (4年)', '川口 慧 (4年)', '大泉 真尋 (2年)', '小林 篤貴 (2年)', '有村 祐亮 (3年)']
+	name: '帝京大学',
+	shortName: '帝京',
+	runners: ['小野 隆一朗 (3年)', '西脇 翔太 (3年)', '岩本 拓真 (2年)', '島田 晃希 (1年)', '新井 大貴 (4年)', '大辻 頌悟 (3年)', '吉岡 尚紀 (4年)', '山中 博生 (2年)', '末次 海斗 (3年)', '日高 拓夢 (3年)']
 }, {
 	name: '法政大学',
 	shortName: '法政',
-	runners: ['内田 隼太 (3年)', '鎌田 航生 (4年)', '小泉 樹 (1年)', '河田 太一平 (3年)', '細迫 海気 (2年)', '武田 和馬 (1年)', '中園 慎太朗 (3年)', '稲毛 崇斗 (2年)', '清家 陸 (4年)', '川上 有生 (3年)']
+	runners: ['松永 伶 (3年)', '内田 隼太 (4年)', '松本 康汰 (4年)', '上仮屋 雄太 (2年)', '髙橋 一颯 (2年)', '武田 和馬 (2年)', '宮岡 幸大 (2年)', '清水 郁杜 (1年)', '山本 恭澄 (4年)', '高須賀 大勢 (3年)']
 }, {
-	name: '中央学院大学',
-	shortName: '中央学院',
-	runners: ['栗原 啓吾 (4年)', '吉田 礼志 (1年)', '武川 流以名 (3年)', '伊藤 秀虎 (2年)', '吉本 光希 (3年)', '工藤 巧夢 (1年)', '松井 尚希 (4年)', '馬場 竜之介 (4年)', '吉田 光汰 (4年)', '中島 稜貴 (3年)']
+	name: '大東文化大学',
+	shortName: '大東文化',
+	runners: ['久保田 徹 (3年)', '中澤 優希 (2年)', '入濵 輝大 (1年)', '小野 翔太郎 (1年)', '塩田 祥梧 (4年)', '佐竹 勇樹 (3年)', '金田 龍心 (4年)', '佐々木 真人 (2年)', '大谷 章紘 (2年)', '西川 千青 (2年)']
 }, {
-	name: '駿河台大学',
-	shortName: '駿河台',
-	runners: ['清野 太成 (3年)', 'Ｊ・ブヌカ (4年)', '町田 康誠 (3年)', '今井 隆生 (4年)', '永井 竜二 (3年)', '小泉 謙 (3年)', '新山 舜心 (2年)', '出仙 龍之介 (3年)', '田尻 健 (4年)', '阪本 大貴 (4年)']
+	name: '明治大学',
+	shortName: '明治',
+	runners: ['富田 峻平 (4年)', '室田 安寿 (1年)', '鈴木 祐太 (2年)', '櫛田 佳希 (4年)', '吉川 響 (1年)', '堀 颯介 (1年)', '杉 彩文海 (3年)', '斎藤 拓海 (3年)', '下條 乃將 (4年)', '新谷 紘ノ介 (2年)']
+}, {
+	name: '城西大学',
+	shortName: '城西',
+	runners: ['野村 颯斗 (3年)', '中田 侑希 (3年)', '山本 樹 (3年)', '鈴木 健真 (1年)', '山本 唯翔 (3年)', '大沼 良太郎 (1年)', '久保出 雄太 (2年)', '桜井 優我 (1年)', '平林 樹 (2年)', '木村 吉希 (4年)']
+}, {
+	name: '早稲田大学',
+	shortName: '早稲田',
+	runners: ['間瀬田 純平 (1年)', '石塚 陽士 (2年)', '井川 龍人 (4年)', '宮岡 凜太 (1年)', '伊藤 大志 (2年)', '北村 光 (3年)', '小指 卓也 (4年)', '伊福 陽太 (2年)', '菖蒲 敦司 (3年)', '辻 文哉 (3年)']
+}, {
+	name: '日本体育大学',
+	shortName: '日本体育',
+	runners: ['平島 龍斗 (1年)', '藤本 珠輝 (4年)', '山下 大毅 (2年)', '分須 尊紀 (2年)', '吉冨 純也 (3年)', '内山 峻一 (3年)', '田島 駿介 (1年)', '九嶋 大雅 (4年)', '田中 慎梧 (3年)', '松浦 凜太郎 (4年)']
+}, {
+	name: '立教大学',
+	shortName: '立教',
+	runners: ['林 虎大朗 (2年)', '國安 広人 (1年)', '関口 絢太 (3年)', '馬場 賢人 (1年)', '相澤 拓摩 (1年)', '内田 賢利 (3年)', '服部 凱杏 (3年)', '山本 羅生 (2年)', '中山 凜斗 (3年)', '安藤 圭佑 (2年)']
+}, {
+	name: '山梨学院大学',
+	shortName: '山梨学院',
+	runners: ['木山 達哉 (4年)', 'B・ムルア (4年)', '村上 大樹 (2年)', '徳田 秋斗 (2年)', '新本 駿 (2年)', '髙田 尚暉 (2年)', '島津 裕太 (3年)', '伊東 大暉 (4年)', '髙木 翔瑛 (3年)', '篠原 楓 (4年)']
 }, {
 	name: '専修大学',
 	shortName: '専修',
-	runners: ['木村 暁仁 (2年)', '髙瀨 桂 (3年)', 'D・キサイサ (1年)', '水谷 勇登 (2年)', '野下 稜平 (2年)', '横山 佑羽 (4年)', '国増 治貴 (3年)', '岩間 暁 (4年)', '服部 友太 (4年)', '中山 敦貴 (2年)']
+	runners: ['木村 暁仁 (3年)', 'D・キサイサ (2年)', '髙瀨 桂 (4年)', '新井 友裕 (1年)', '冨永 裕憂 (4年)', '粟江 倫太郎 (3年)', '中山 敦貴 (3年)', '手塚 太一 (1年)', '水谷 勇登 (3年)', '小島 光佑 (4年)']
+}, {
+	name: '東海大学',
+	shortName: '東海',
+	runners: ['梶谷 優斗 (2年)', '石原 翔太郎 (3年)', '花岡 寿哉 (1年)', '水野 龍志 (2年)', '杉本 将太 (4年)', '川上 勇士 (4年)', '松崎 咲人 (4年)', '佐藤 俊輔 (4年)', '竹村 拓真 (4年)', '宇留田 竜希 (4年)']
 }, {
 	name: '国士舘大学',
 	shortName: '国士舘',
-	runners: ['木榑 杏祐 (4年)', 'R・ヴィンセント (4年)', '荻原 陸斗 (4年)', '三代 和弥 (4年)', '山本 雷我 (2年)', '福井 大夢 (3年)', '清水 拓斗 (4年)', '山本 龍神 (2年)', '綱島 辰弥 (3年)', '望月 武 (3年)']
+	runners: ['綱島 辰弥 (4年)', 'P・カマウ (4年)', '瀬川 翔誠 (1年)', '松井 遼太 (2年)', '山本 雷我 (3年)', '勝部 愛大 (1年)', '西田 大智 (2年)', '渡辺 大喜 (2年)', '望月 武 (4年)', '生田目 惇 (2年)']
 }, {
 	name: '関東学生連合',
 	shortName: '学生連合',
-	runners: ['中山 雄太 (3年)', '並木 寧音 (2年)', '斎藤 俊輔 (4年)', '村上 航大 (3年)', '福谷 颯太 (3年)', '鈴木 康也 (1年)', '田島 公太郎 (1年)', '大野 陽人 (3年)', '竹井 祐貴 (4年)', '諸星 颯大 (3年)']
+	runners: ['新田 颯 (4年)', '工藤 大和 (2年)', '内野 李彗 (3年)', '山田 拓人 (4年)', '橋本 章央 (3年)', '波多江 隆人 (2年)', '榎本 晃大 (2年)', '佐藤 碧 (2年)', '皆川 和範 (3年)', '貝川 裕亮 (4年)']
 }];
 
 let replayData;
@@ -4203,9 +4203,14 @@ const charts = [];
 
 const SQRT3 = Math.sqrt(3);
 
-//let trip = new Date(Date.now() + (new Date().getTimezoneOffset() + 540) * 60000).getDate() % 2;
-let trip = 0;
-let clockOffset = Date.now() - (trips[trip].startTime - 15000);
+// Live mode
+let trip = new Date(Date.now() + (new Date().getTimezoneOffset() + 540) * 60000).getDate() % 2;
+let clockOffset = 0;
+
+// Replay mode
+//let trip = 0;
+//let clockOffset = Date.now() - (trips[trip].startTime - 15000);
+
 const routeFeatures = routes.map(route => turf.lineString(route));
 
 for (const team of teams) {
@@ -4696,7 +4701,7 @@ let placing = trips[trip].placing.slice();
 
 function updatePlacing() {
 	placing
-		.sort((a, b) => teams[b].distance - teams[a].distance)
+		.sort((a, b) => Math.abs(teams[b].distance) - Math.abs(teams[a].distance))
 		.forEach((v, i) => {
 			const team = teams[v],
 				element = document.getElementById(`team-${i + 1}`);
@@ -4787,10 +4792,13 @@ function hideTrackingInfo() {
 }
 
 function loadRunnerData(now, callback) {
-//	fetch('https://mini-tokyo.appspot.com/hakone')
-//		.then(response => response.json())
-//		.then(callback);
+	// Live mode
+	fetch('https://mini-tokyo.appspot.com/hakone')
+		.then(response => response.json())
+		.then(callback);
 
+	// Replay mode
+/*
 	if (replayData) {
 		const tzOffset = (new Date().getTimezoneOffset() + 540) * 60000;
 
@@ -4805,6 +4813,7 @@ function loadRunnerData(now, callback) {
 		}
 		callback(replayData[replayDataIndex]);
 	}
+*/
 }
 
 const trackingMarkerElement = document.getElementById('tracking-marker');
@@ -4846,14 +4855,17 @@ Object.defineProperty(map.transform, 'pitch', {
 });
 
 const canvasElement = document.querySelector('#map .mapboxgl-canvas');
-const day1Element = document.getElementById('day1');
-const day2Element = document.getElementById('day2');
-const clockElement = document.getElementById('clock');
-const sliderElement = document.getElementById('replay-slider');
 const tripTextElement = document.getElementById('trip');
 const sectionTextElement = document.getElementById('section');
 const distanceTextElement = document.getElementById('distance');
 const distanceBarElement = document.getElementById('progress');
+
+// Replay mode
+/*
+const day1Element = document.getElementById('day1');
+const day2Element = document.getElementById('day2');
+const clockElement = document.getElementById('clock');
+const sliderElement = document.getElementById('replay-slider');
 
 day1Element.addEventListener('change', () => {
 	trip = 0;
@@ -4893,6 +4905,7 @@ sliderElement.addEventListener('input', () => {
 	replayDataIndex = 0;
 	canvasElement.focus();
 });
+*/
 
 map.addControl(new mapboxgl.NavigationControl({visualizePitch: true}));
 map.addControl(new mapboxgl.FullscreenControl());
@@ -5141,7 +5154,7 @@ map.once('styledata', () => {
 	});
 
 	map.addLayer({
-		id: 'route',
+		id: 'route-1',
 		type: 'line',
 		source: 'route',
 		layout: {
@@ -5149,7 +5162,35 @@ map.once('styledata', () => {
 			'line-cap': 'round'
 		},
 		paint: {
-			'line-color': 'rgba(255, 255, 0, 0.5)',
+			'line-color': 'rgba(255, 255, 0, 0.4)',
+			'line-width': 20,
+			'line-blur': 5
+		}
+	});
+	map.addLayer({
+		id: 'route-2',
+		type: 'line',
+		source: 'route',
+		layout: {
+			'line-join': 'round',
+			'line-cap': 'round'
+		},
+		paint: {
+			'line-color': 'rgba(255, 255, 0, 0.4)',
+			'line-width': 10,
+			'line-blur': 5
+		}
+	});
+	map.addLayer({
+		id: 'route-3',
+		type: 'line',
+		source: 'route',
+		layout: {
+			'line-join': 'round',
+			'line-cap': 'round'
+		},
+		paint: {
+			'line-color': 'rgba(255, 255, 127, 1)',
 			'line-width': 4
 		}
 	});
@@ -5255,7 +5296,9 @@ map.once('styledata', () => {
 		}
 	})
 
-	let lastClockRefresh = 0;
+	// Replay mode
+//	let lastClockRefresh = 0;
+
 	let initialDataLoadComplete = false;
 
 	const frame = () => {
@@ -5489,11 +5532,14 @@ map.once('styledata', () => {
 			lastViewSwitch = now;
 		}
 
+		// Replay mode
+/*
 		if (Math.floor(now / 1000) !== Math.floor(lastClockRefresh / 1000)) {
 			clockElement.innerText = new Date(now).toLocaleTimeString('ja-JP', {timeZone: 'JST'});
 			sliderElement.value = now - trips[trip].startTime;
 			lastClockRefresh = now;
 		}
+*/
 
 		requestAnimationFrame(frame);
 	};
