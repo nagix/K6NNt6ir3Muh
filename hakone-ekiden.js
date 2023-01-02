@@ -5367,7 +5367,9 @@ map.once('styledata', () => {
 							});
 							map.once('moveend', () => {
 								trackingTeam = placing[0];
-								trackingMode = 'front';
+								if (autoTrackingMode) {
+									trackingMode = 'front';
+								}
 								lastViewSwitch = Date.now() - clockOffset;
 								startTrackingAnimation();
 								showPanel();
