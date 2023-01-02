@@ -4179,7 +4179,8 @@ const trackingModes = [
 	'back-above',
 	'drone',
 	'helicopter',
-	'bird'
+	'bird',
+	'motorcycle'
 ];
 const trackingParams = {
 	zoom: {},
@@ -4217,6 +4218,7 @@ let modelScale;
 let trackingTeam;
 let trackingMode = 'front';
 let autoTrackingMode = true;
+let motorcycleDirection = 'front';
 let lastDataLoad = 0;
 let lastViewSwitch = Date.now() - clockOffset;
 let trackingAnimationID;
@@ -4556,18 +4558,18 @@ function jumpTo(options) {
 		bearing = trackingParams.bearing.fn(now);
 		pitch = trackingParams.pitch.fn(now);
 	} else {
-		if (trackingMode === 'front' || trackingMode === 'front-above') {
+		if (trackingMode === 'front' || trackingMode === 'front-above' || (trackingMode === 'motorcycle' && (motorcycleDirection === 'front' || motorcycleDirection === 'front-above'))) {
 			bearing = (bearing + 360) % 360 - 180;
 		}
-		if (trackingMode === 'front') {
+		if (trackingMode === 'front' || (trackingMode === 'motorcycle' && motorcycleDirection === 'front')) {
 			bearing += 5;
-		} else if (trackingMode === 'back') {
+		} else if (trackingMode === 'back' || (trackingMode === 'motorcycle' && motorcycleDirection === 'back')) {
 			bearing -= 5;
 		}
 		if (bearingFactor >= 0) {
 			bearing = currentBearing + ((bearing - currentBearing + 540) % 360 - 180) * bearingFactor;
 		}
-		if (trackingMode === 'front' || trackingMode === 'back') {
+		if (trackingMode === 'front' || trackingMode === 'back' || (trackingMode === 'motorcycle' && (motorcycleDirection === 'front' || motorcycleDirection === 'back'))) {
 			zoom = 21;
 			pitch = 85;
 		} else {
@@ -4891,6 +4893,7 @@ sliderElement.addEventListener('input', () => {
 	clockOffset = Date.now() - (trips[trip].startTime + parseInt(sliderElement.value));
 	lastDataLoad = 0;
 	replayDataIndex = 0;
+	lastViewSwitch = Date.now() - clockOffset;
 	canvasElement.focus();
 });
 */
@@ -5376,11 +5379,9 @@ map.once('styledata', () => {
 				}
 				updateChart();
 				updatePlacing();
-				if (autoPaging && trackingTeam !== undefined && trackingTeam !== placing[0]) {
+				if (autoPaging && trackingMode !== 'motorcycle' && trackingTeam !== undefined && trackingTeam !== placing[0]) {
 					trackingTeam = placing[0];
-					if (!autoTrackingMode) {
-						startTrackingAnimation();
-					}
+					startTrackingAnimation();
 				}
 			});
 
@@ -5505,22 +5506,65 @@ map.once('styledata', () => {
 			}
 		}
 
-		if (trackingTeam && now >= lastViewSwitch + 30000) {
-			if (autoPaging) {
+		if (trackingTeam && now >= lastViewSwitch + (trackingMode === 'motorcycle' ? 5000 : 30000)) {
+			let viewAnimation = false,
+				viewSwitch = true;
+
+			if (trackingMode === 'motorcycle') {
+				const currentPlacing = placing.indexOf(trackingTeam);
+
+				viewSwitch = false;
+				if (motorcycleDirection === 'front') {
+					if (currentPlacing < 20) {
+						trackingTeam = placing[currentPlacing + 1];
+					} else {
+						motorcycleDirection = 'back-above';
+						viewSwitch = true;
+					}
+				} else if (motorcycleDirection === 'front-above') {
+					motorcycleDirection = 'front';
+				} else if (motorcycleDirection === 'back') {
+					if (currentPlacing > 0) {
+						trackingTeam = placing[currentPlacing - 1];
+					} else {
+						motorcycleDirection = 'front-above';
+						viewSwitch = true;
+					}
+				} else {
+					motorcycleDirection = 'back';
+				}
+				viewAnimation = true;
+			}
+
+			if (autoPaging && viewSwitch) {
+				trackingTeam = placing[0];
 				swiper.slideTo((swiper.activeIndex + 1) % 2);
 			}
 
-			if (autoTrackingMode) {
+			if (autoTrackingMode && viewSwitch) {
 				if (now > trips[trip].startTime - 33000 && now <= trips[trip].startTime) {
 					trackingMode = 'front';
 				} else {
-					trackingMode = trackingModes[Math.floor(Math.random() * (trackingModes.length - 2)) + 2];
+					trackingMode = trackingModes[Math.floor(Math.random() * (trackingModes.length - (autoPaging ? 2 : 3))) + 2];
 				}
-				startTrackingAnimation();
+				if (trackingMode === 'motorcycle') {
+					if (Math.random() < 0.5) {
+						trackingTeam = placing[0];
+						motorcycleDirection = 'front-above';
+					} else {
+						trackingTeam = placing[20];
+						motorcycleDirection = 'back-above';
+					}
+				}
+				viewAnimation = true;
 			}
 
+			if (viewAnimation) {
+				startTrackingAnimation();
+			}
 			lastViewSwitch = now;
 		}
+
 
 		// Replay mode
 /*
