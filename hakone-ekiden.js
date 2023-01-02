@@ -4078,90 +4078,77 @@ const teams = [{
 	name: ''
 }, {
 	name: '青山学院大学',
-	shortName: '青山学院',
-	runners: ['目片 将大 (4年)', '近藤 幸太郎 (4年)', '横田 俊吾 (4年)', '太田 蒼生 (2年)', '脇田 幸太朗 (4年)', '西川 魁星 (4年)', '佐藤 一世 (3年)', '荒巻 朋熙 (1年)', '塩出 翔太 (1年)', '中倉 啓敦 (4年)']
+	shortName: '青山学院'
 }, {
 	name: '順天堂大学',
-	shortName: '順天堂',
-	runners: ['野村 優作 (4年)', '三浦 龍司 (3年)', '伊豫田 達弥 (4年)', '石井 一希 (3年)', '四釜 峻佑 (4年)', '村尾 雄己 (1年)', '海老澤 憲伸 (2年)', '平 駿介 (4年)', '藤原 優希 (3年)', '内田 征冶 (3年)']
+	shortName: '順天堂'
 }, {
 	name: '駒澤大学',
-	shortName: '駒澤',
-	runners: ['円 健介 (4年)', '田澤 廉 (4年)', '篠原 倖太朗 (2年)', '鈴木 芽吹 (3年)', '山川 拓馬 (1年)', '帰山 侑大 (1年)', '安原 太陽 (3年)', '花尾 恭輔 (3年)', '山野 力 (4年)', '青柿 響 (3年)']
+	shortName: '駒澤'
 }, {
 	name: '東洋大学',
-	shortName: '東洋',
-	runners: ['児玉 悠輔 (4年)', '石田 洸介 (2年)', '小林 亮太 (2年)', '柏 優吾 (4年)', '前田 義弘 (4年)', '西村 真周 (1年)', '熊崎 貴哉 (3年)', '網本 佳悟 (1年)', '九嶋 恵舜 (3年)', '清野 太雅 (4年)']
+	shortName: '東洋'
 }, {
 	name: '東京国際大学',
-	shortName: '東京国際',
-	runners: ['山谷 昌也 (4年)', '丹所 健 (4年)', '白井 勇佑 (2年)', 'Y・ヴィンセント (4年)', '川端 拳史 (3年)', '林 優策 (3年)', '山岸 柊斗 (2年)', '川内 琉生 (1年)', '村松 敬哲 (3年)', '堀畑 佳吾 (4年)']
+	shortName: '東京国際'
 }, {
 	name: '中央大学',
-	shortName: '中央',
-	runners: ['溜池 一太 (1年)', '吉居 大和 (3年)', '中野 翔太 (3年)', '吉居 駿恭 (1年)', '阿部 陽樹 (2年)', '若林 陽大 (4年)', '白川 陽大 (1年)', '中澤 雄大 (4年)', '湯浅 仁 (3年)', '助川 拓海 (4年)']
+	shortName: '中央'
 }, {
 	name: '創価大学',
-	shortName: '創価',
-	runners: ['横山 魁哉 (4年)', 'P・ムルワ (4年)', '山森 龍暁 (3年)', '嶋津 雄大 (4年)', '野沢 悠真 (1年)', '濱野 将基 (4年)', '葛西 潤 (4年)', '桑田 大輔 (3年)', '緒方 貴典 (4年)', '石丸 惇那 (1年)']
+	shortName: '創価'
 }, {
 	name: '國學院大學',
-	shortName: '國學院',
-	runners: ['青木 瑠郁 (1年)', '平林 清澄 (2年)', '山本 歩夢 (2年)', '藤本 竜 (4年)', '伊地知 賢造 (3年)', '島﨑 慎愛 (4年)', '上原 琉翔 (1年)', '高山 豪起 (1年)', '坂本 健悟 (4年)', '瀬尾 秀介 (3年)']
+	shortName: '國學院'
 }, {
 	name: '帝京大学',
-	shortName: '帝京',
-	runners: ['小野 隆一朗 (3年)', '西脇 翔太 (3年)', '小林 大晟 (2年)', '柴戸 遼太 (1年)', '新井 大貴 (4年)', '大辻 頌悟 (3年)', '吉岡 尚紀 (4年)', '山中 博生 (2年)', '末次 海斗 (3年)', '日高 拓夢 (3年)']
+	shortName: '帝京'
 }, {
 	name: '法政大学',
-	shortName: '法政',
-	runners: ['松永 伶 (3年)', '内田 隼太 (4年)', '川上 有生 (4年)', '扇 育 (4年)', '細迫 海気 (3年)', '武田 和馬 (2年)', '宮岡 幸大 (2年)', '清水 郁杜 (1年)', '山本 恭澄 (4年)', '高須賀 大勢 (3年)']
+	shortName: '法政'
 }, {
 	name: '大東文化大学',
-	shortName: '大東文化',
-	runners: ['久保田 徹 (3年)', 'P・ワンジル (2年)', '入濵 輝大 (1年)', '大野 陽人 (4年)', '菊地 駿介 (3年)', '佐竹 勇樹 (3年)', '金田 龍心 (4年)', '佐々木 真人 (2年)', '大谷 章紘 (2年)', '西川 千青 (2年)']
+	shortName: '大東文化'
 }, {
 	name: '明治大学',
-	shortName: '明治',
-	runners: ['富田 峻平 (4年)', '小澤 大輝 (4年)', '森下 翔太 (1年)', '尾﨑 健斗 (2年)', '吉川 響 (1年)', '堀 颯介 (1年)', '杉 彩文海 (3年)', '斎藤 拓海 (3年)', '下條 乃將 (4年)', '新谷 紘ノ介 (2年)']
+	shortName: '明治'
 }, {
 	name: '城西大学',
-	shortName: '城西',
-	runners: ['野村 颯斗 (3年)', '斎藤 将也 (2年)', 'V・キムタイ (1年)', '鈴木 健真 (1年)', '山本 唯翔 (3年)', '大沼 良太郎 (1年)', '久保出 雄太 (2年)', '桜井 優我 (1年)', '平林 樹 (2年)', '木村 吉希 (4年)']
+	shortName: '城西'
 }, {
 	name: '早稲田大学',
-	shortName: '早稲田',
-	runners: ['間瀬田 純平 (1年)', '石塚 陽士 (2年)', '井川 龍人 (4年)', '佐藤 航希 (3年)', '伊藤 大志 (2年)', '北村 光 (3年)', '小指 卓也 (4年)', '伊福 陽太 (2年)', '菖蒲 敦司 (3年)', '辻 文哉 (3年)']
+	shortName: '早稲田'
 }, {
 	name: '日本体育大学',
-	shortName: '日本体育',
-	runners: ['山崎 丞 (1年)', '藤本 珠輝 (4年)', '漆畑 徳輝 (3年)', '分須 尊紀 (2年)', '吉冨 純也 (3年)', '内山 峻一 (3年)', '田島 駿介 (1年)', '九嶋 大雅 (4年)', '田中 慎梧 (3年)', '松浦 凜太郎 (4年)']
+	shortName: '日本体育'
 }, {
 	name: '立教大学',
-	shortName: '立教',
-	runners: ['林 虎大朗 (2年)', '國安 広人 (1年)', '関口 絢太 (3年)', '馬場 賢人 (1年)', '相澤 拓摩 (1年)', '内田 賢利 (3年)', '服部 凱杏 (3年)', '山本 羅生 (2年)', '中山 凜斗 (3年)', '安藤 圭佑 (2年)']
+	shortName: '立教'
 }, {
 	name: '山梨学院大学',
-	shortName: '山梨学院',
-	runners: ['木山 達哉 (4年)', 'B・ムルア (4年)', '村上 大樹 (2年)', '北村 惇生 (3年)', '新本 駿 (2年)', '髙田 尚暉 (2年)', '島津 裕太 (3年)', '伊東 大暉 (4年)', '髙木 翔瑛 (3年)', '篠原 楓 (4年)']
+	shortName: '山梨学院'
 }, {
 	name: '専修大学',
-	shortName: '専修',
-	runners: ['千代島 宗汰 (2年)', 'D・キサイサ (2年)', '成島 航己 (4年)', '新井 友裕 (1年)', '冨永 裕憂 (4年)', '粟江 倫太郎 (3年)', '中山 敦貴 (3年)', '手塚 太一 (1年)', '水谷 勇登 (3年)', '小島 光佑 (4年)']
+	shortName: '専修'
 }, {
 	name: '東海大学',
-	shortName: '東海',
-	runners: ['梶谷 優斗 (2年)', '石原 翔太郎 (3年)', '花岡 寿哉 (1年)', '越 陽汰 (2年)', '杉本 将太 (4年)', '川上 勇士 (4年)', '松崎 咲人 (4年)', '佐藤 俊輔 (4年)', '竹村 拓真 (4年)', '宇留田 竜希 (4年)']
+	shortName: '東海'
 }, {
 	name: '国士舘大学',
-	shortName: '国士舘',
-	runners: ['綱島 辰弥 (4年)', 'P・カマウ (4年)', '山本 龍神 (3年)', '清水 悠雅 (4年)', '山本 雷我 (3年)', '勝部 愛大 (1年)', '西田 大智 (2年)', '渡辺 大喜 (2年)', '望月 武 (4年)', '生田目 惇 (2年)']
+	shortName: '国士舘'
 }, {
 	name: '関東学生連合',
-	shortName: '学生連合',
-	runners: ['新田 颯 (4年)', '工藤 大和 (2年)', '内野 李彗 (3年)', '山田 拓人 (4年)', '橋本 章央 (3年)', '波多江 隆人 (2年)', '榎本 晃大 (2年)', '佐藤 碧 (2年)', '皆川 和範 (3年)', '貝川 裕亮 (4年)']
+	shortName: '学生連合'
 }];
 
+fetch('https://mini-tokyo.appspot.com/hakone-runners').then(response => response.json()).then(data => {
+	for (let i = 1; i < teams.length; i++) {
+		teams[i].runners = data[i];
+	}
+});
+
+// Replay mode
+/*
 let replayData;
 let replayDataIndex = 0;
 fetch('hakone-2022.json.gz').then(async response => {
@@ -4181,6 +4168,7 @@ fetch('hakone-2022.json.gz').then(async response => {
 		inflate.push(value);
 	}
 });
+*/
 
 const trackingModes = [
 	'auto',
@@ -4735,7 +4723,7 @@ function updateChart() {
 			}
 			dataset.borderColor = i === trackingTeam ? 'rgb(0, 255, 0)' : 'rgba(0, 102, 0)';
 			dataset.borderWidth = i === trackingTeam ? 3 : 1;
-			dataset.label = `${teams[i].shortName}・${teams[i].runners[trip * 5 + section].match(/[^・ ]+ /)[0]}`;
+			dataset.label = `${teams[i].shortName}・${teams[i].runners[trip * 5 + section][0].match(/[^\. ]+(?: |$)/)}`;
 			dataset.order = i === trackingTeam ? 0 : 1;
 		}
 		charts[0].config.options.plugins.title.text = `${trip * 5 + section + 1}区 ランナー速度`;
@@ -5211,7 +5199,7 @@ map.once('styledata', () => {
 
 		element.addEventListener('mouseenter', event => {
 			if (!popup.isOpen()) {
-				team.marker.getPopup().setHTML(`${team.name}<br>${team.runners[trip * 5 + team.estimatedSection]}`);
+				team.marker.getPopup().setHTML(`${team.name}<br>${team.runners[trip * 5 + team.estimatedSection][0]}`);
 				team.marker.togglePopup();
 			}
 		});
@@ -5500,10 +5488,12 @@ map.once('styledata', () => {
 					distanceBarElement.style.width = `${(distance - baseDistance) / (nextDistance - baseDistance) * 100}%`;
 
 					if (i === trackingTeam) {
+						const runner = teams[i].runners[trip * 5 + section];
+
 						showTrackingInfo();
 						trackingMarkerElement.style.backgroundImage = `url('markers/${i}.png')`;
 						trackingTeamTextElement.innerText = teams[i].name;
-						trackingRunnerTextElement.innerText = teams[i].runners[trip * 5 + section];
+						trackingRunnerTextElement.innerText = `${runner[0]} (${runner[1]})`;
 
 						if (chartSection !== section) {
 							updateChart();
