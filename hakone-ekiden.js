@@ -4141,17 +4141,24 @@ const teams = [{
 	shortName: '学生連合'
 }];
 
-fetch('https://mini-tokyo.appspot.com/hakone-runners').then(response => response.json()).then(data => {
+// Live mode
+//const RUNNERS_URL = 'https://mini-tokyo.appspot.com/hakone-runners';
+
+// Replay mode
+const RUNNERS_URL = 'runners.json';
+
+fetch(RUNNERS_URL).then(response => response.json()).then(data => {
 	for (let i = 1; i < teams.length; i++) {
 		teams[i].runners = data[i];
 	}
 });
 
+let warmupDuration = 340000;
+
 // Replay mode
-/*
 let replayData;
 let replayDataIndex = 0;
-fetch('hakone-2022.json.gz').then(async response => {
+fetch('hakone-2023.json.gz').then(async response => {
 	const reader = response.body.getReader(),
 		inflate = new pako.Inflate({to: 'string'});
 
@@ -4160,15 +4167,27 @@ fetch('hakone-2022.json.gz').then(async response => {
 
 		if (done) {
 			replayData = JSON.parse(inflate.result);
-			for (const point of replayData[225].points) {
-				teams[point[0]]._speed = point[5] / (340 / 3600);
+			for (const item of replayData) {
+				let count = 0;
+
+				for (const point of item.points) {
+					if (point[0] > 0 && point[9] * 1000 >= trips[trip].startTime + warmupDuration) {
+						count++;
+					}
+				}
+				if (count === 21) {
+					for (const point of item.points) {
+						teams[point[0]]._speed = point[5] / ((point[9] * 1000 - trips[trip].startTime) / 3600000);
+						warmupDuration = Math.max(warmupDuration, point[9] * 1000 - trips[trip].startTime);
+					}
+					break;
+				}
 			}
 			break;
 		}
 		inflate.push(value);
 	}
 });
-*/
 
 const trackingModes = [
 	'auto',
@@ -4193,12 +4212,12 @@ const charts = [];
 const SQRT3 = Math.sqrt(3);
 
 // Live mode
-let trip = new Date(Date.now() + (new Date().getTimezoneOffset() + 540) * 60000).getDate() % 2;
-let clockOffset = 0;
+//let trip = new Date(Date.now() + (new Date().getTimezoneOffset() + 540) * 60000).getDate() % 2;
+//let clockOffset = 0;
 
 // Replay mode
-//let trip = 0;
-//let clockOffset = Date.now() - (trips[trip].startTime - 15000);
+let trip = 0;
+let clockOffset = Date.now() - (trips[trip].startTime - 15000);
 
 const routeFeatures = routes.map(route => turf.lineString(route));
 
@@ -4783,12 +4802,11 @@ function hideTrackingInfo() {
 
 function loadRunnerData(now, callback) {
 	// Live mode
-	fetch('https://mini-tokyo.appspot.com/hakone')
-		.then(response => response.json())
-		.then(callback);
+//	fetch('https://mini-tokyo.appspot.com/hakone')
+//		.then(response => response.json())
+//		.then(callback);
 
 	// Replay mode
-/*
 	if (replayData) {
 		const tzOffset = (new Date().getTimezoneOffset() + 540) * 60000;
 
@@ -4803,7 +4821,6 @@ function loadRunnerData(now, callback) {
 		}
 		callback(replayData[replayDataIndex]);
 	}
-*/
 }
 
 const trackingMarkerElement = document.getElementById('tracking-marker');
@@ -4851,7 +4868,6 @@ const distanceTextElement = document.getElementById('distance');
 const distanceBarElement = document.getElementById('progress');
 
 // Replay mode
-/*
 const day1Element = document.getElementById('day1');
 const day2Element = document.getElementById('day2');
 const clockElement = document.getElementById('clock');
@@ -4896,7 +4912,6 @@ sliderElement.addEventListener('input', () => {
 	lastViewSwitch = Date.now() - clockOffset;
 	canvasElement.focus();
 });
-*/
 
 map.addControl(new mapboxgl.NavigationControl({visualizePitch: true}));
 map.addControl(new mapboxgl.FullscreenControl());
@@ -5288,7 +5303,7 @@ map.once('styledata', () => {
 	})
 
 	// Replay mode
-//	let lastClockRefresh = 0;
+	let lastClockRefresh = 0;
 
 	let initialDataLoadComplete = false;
 
@@ -5333,7 +5348,7 @@ map.once('styledata', () => {
 						distance = speed = 0;
 					}
 
-					if (trip === 0 && now < trips[trip].startTime + 340000) {
+					if (trip === 0 && now < trips[trip].startTime + warmupDuration) {
 						teams[id].distance = teams[id]._speed * (now - trips[trip].startTime) / 3600000;
 						teams[id].speed = teams[id]._speed;
 						teams[id].ts = now / 1000;
@@ -5569,13 +5584,11 @@ map.once('styledata', () => {
 
 
 		// Replay mode
-/*
 		if (Math.floor(now / 1000) !== Math.floor(lastClockRefresh / 1000)) {
 			clockElement.innerText = new Date(now).toLocaleTimeString('ja-JP', {timeZone: 'JST'});
 			sliderElement.value = now - trips[trip].startTime;
 			lastClockRefresh = now;
 		}
-*/
 
 		requestAnimationFrame(frame);
 	};
