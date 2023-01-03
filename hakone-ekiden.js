@@ -5550,6 +5550,7 @@ map.once('styledata', () => {
 				} else {
 					motorcycleDirection = 'back';
 				}
+				updateChart();
 				viewAnimation = true;
 			}
 
@@ -5572,6 +5573,7 @@ map.once('styledata', () => {
 						trackingTeam = placing[20];
 						motorcycleDirection = 'back-above';
 					}
+					updateChart();
 				}
 				viewAnimation = true;
 			}
