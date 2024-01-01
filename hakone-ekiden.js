@@ -4048,22 +4048,22 @@ const trips = [{
 	name: '往路',
 	center: routes[0][0],
 	bearing: 95,
-	startTime: 1672614000000,
-	placing: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+	startTime: 1704150000000,
+	placing: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
 }, {
 	name: '復路',
 	center: routes[1][0],
 	bearing: -50,
-	startTime: 1672700400000,
-	placing: [3, 6, 1, 8, 14, 2, 5, 10, 13, 7, 4, 12, 19, 9, 20, 17, 11, 15, 21, 18, 16]
+	startTime: 1704236400000,
+	placing: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
 }];
 
 const sections = [[
 	{name: '<i class="far fa-flag"></i>スタート 読売新聞社前', index: 0, distance: 0, record: 21.124405481063278},
 	{name: '<i class="fas fa-flag"></i>鶴見中継所', index: 84, distance: 21.359121097519537, record: 21.035128937347521},
 	{name: '<i class="fas fa-flag"></i>戸塚中継所', index: 226, distance: 44.43348892351547, record: 21.591783083454362},
-	{name: '<i class="fas fa-flag"></i>平塚中継所', index: 359, distance: 65.81535189365847, record: 20.744999987623745},
-	{name: '<i class="fas fa-flag"></i>小田原中継所', index: 510, distance: 86.73322688117908, record: 17.712562973508204},
+	{name: '<i class="fas fa-flag"></i>平塚中継所', index: 359, distance: 65.81535189365847, record: 20.91787498752061},
+	{name: '<i class="fas fa-flag"></i>小田原中継所', index: 510, distance: 86.73322688117908, record: 17.801041523090455},
 	{name: '<i class="fas fa-flag-checkered"></i>ゴール 芦ノ湖', index: 1012, distance: 107.52088759314357}
 ], [
 	{name: '<i class="far fa-flag"></i>スタート 芦ノ湖', index: 0, distance: 0, record: 21.726307131090458},
@@ -4077,35 +4077,35 @@ const sections = [[
 const teams = [{
 	name: ''
 }, {
-	name: '青山学院大学',
-	shortName: '青山学院'
-}, {
-	name: '順天堂大学',
-	shortName: '順天堂'
-}, {
 	name: '駒澤大学',
 	shortName: '駒澤'
-}, {
-	name: '東洋大学',
-	shortName: '東洋'
-}, {
-	name: '東京国際大学',
-	shortName: '東京国際'
 }, {
 	name: '中央大学',
 	shortName: '中央'
 }, {
-	name: '創価大学',
-	shortName: '創価'
+	name: '青山学院大学',
+	shortName: '青山学院'
 }, {
 	name: '國學院大學',
 	shortName: '國學院'
 }, {
-	name: '帝京大学',
-	shortName: '帝京'
+	name: '順天堂大学',
+	shortName: '順天堂'
+}, {
+	name: '早稲田大学',
+	shortName: '早稲田'
 }, {
 	name: '法政大学',
 	shortName: '法政'
+}, {
+	name: '創価大学',
+	shortName: '創価'
+}, {
+	name: '城西大学',
+	shortName: '城西'
+}, {
+	name: '東洋大学',
+	shortName: '東洋'
 }, {
 	name: '大東文化大学',
 	shortName: '大東文化'
@@ -4113,39 +4113,45 @@ const teams = [{
 	name: '明治大学',
 	shortName: '明治'
 }, {
-	name: '城西大学',
-	shortName: '城西'
-}, {
-	name: '早稲田大学',
-	shortName: '早稲田'
+	name: '帝京大学',
+	shortName: '帝京'
 }, {
 	name: '日本体育大学',
 	shortName: '日本体育'
 }, {
+	name: '日本大学',
+	shortName: '日本'
+}, {
 	name: '立教大学',
 	shortName: '立教'
 }, {
-	name: '山梨学院大学',
-	shortName: '山梨学院'
-}, {
-	name: '専修大学',
-	shortName: '専修'
-}, {
-	name: '東海大学',
-	shortName: '東海'
+	name: '神奈川大学',
+	shortName: '神奈川'
 }, {
 	name: '国士舘大学',
 	shortName: '国士舘'
 }, {
-	name: '関東学生連合',
-	shortName: '学生連合'
+	name: '中央学院大学',
+	shortName: '中央学院'
+}, {
+	name: '東海大学',
+	shortName: '東海'
+}, {
+	name: '東京農業大学',
+	shortName: '東京農業'
+}, {
+	name: '駿河台大学',
+	shortName: '駿河台'
+}, {
+	name: '山梨学院大学',
+	shortName: '山梨学院'
 }];
 
 // Live mode
-//const RUNNERS_URL = 'https://mini-tokyo.appspot.com/hakone-runners';
+const RUNNERS_URL = 'https://mini-tokyo.appspot.com/hakone-runners';
 
 // Replay mode
-const RUNNERS_URL = 'runners.json';
+//const RUNNERS_URL = 'runners.json';
 
 fetch(RUNNERS_URL).then(response => response.json()).then(data => {
 	for (let i = 1; i < teams.length; i++) {
@@ -4156,6 +4162,7 @@ fetch(RUNNERS_URL).then(response => response.json()).then(data => {
 let warmupDuration = 340000;
 
 // Replay mode
+/*
 let replayData;
 let replayDataIndex = 0;
 fetch('hakone-2023.json.gz').then(async response => {
@@ -4188,6 +4195,7 @@ fetch('hakone-2023.json.gz').then(async response => {
 		inflate.push(value);
 	}
 });
+*/
 
 const trackingModes = [
 	'auto',
@@ -4212,12 +4220,12 @@ const charts = [];
 const SQRT3 = Math.sqrt(3);
 
 // Live mode
-//let trip = new Date(Date.now() + (new Date().getTimezoneOffset() + 540) * 60000).getDate() % 2;
-//let clockOffset = 0;
+let trip = new Date(Date.now() + (new Date().getTimezoneOffset() + 540) * 60000).getDate() % 2;
+let clockOffset = 0;
 
 // Replay mode
-let trip = 0;
-let clockOffset = Date.now() - (trips[trip].startTime - 15000);
+//let trip = 0;
+//let clockOffset = Date.now() - (trips[trip].startTime - 15000);
 
 const routeFeatures = routes.map(route => turf.lineString(route));
 
@@ -4715,7 +4723,7 @@ function updatePlacing() {
 			const team = teams[v],
 				element = document.getElementById(`team-${i + 1}`);
 
-			team.marker.getElement().style.zIndex = 21 - i;
+			team.marker.getElement().style.zIndex = 23 - i;
 			element.innerText = `${i + 1}. ${team.name}`;
 		});
 }
@@ -4744,7 +4752,7 @@ function updateChart() {
 			}
 			dataset.borderColor = i === trackingTeam ? 'rgb(0, 255, 0)' : 'rgba(0, 102, 0)';
 			dataset.borderWidth = i === trackingTeam ? 3 : 1;
-			dataset.label = `${teams[i].shortName}・${teams[i].runners[trip * 5 + section][0].match(/[^\. ]+(?: |$)/)}`;
+			dataset.label = `${teams[i].shortName}・${teams[i].runners ? teams[i].runners[trip * 5 + section][0].match(/[^\. ]+(?: |$)/) : ''}`;
 			dataset.order = i === trackingTeam ? 0 : 1;
 		}
 		charts[0].config.options.plugins.title.text = `${trip * 5 + section + 1}区 ランナー速度`;
@@ -4802,11 +4810,12 @@ function hideTrackingInfo() {
 
 function loadRunnerData(now, callback) {
 	// Live mode
-//	fetch('https://mini-tokyo.appspot.com/hakone')
-//		.then(response => response.json())
-//		.then(callback);
+	fetch('https://mini-tokyo.appspot.com/hakone')
+		.then(response => response.json())
+		.then(callback);
 
 	// Replay mode
+/*
 	if (replayData) {
 		const tzOffset = (new Date().getTimezoneOffset() + 540) * 60000;
 
@@ -4821,6 +4830,7 @@ function loadRunnerData(now, callback) {
 		}
 		callback(replayData[replayDataIndex]);
 	}
+*/
 }
 
 const trackingMarkerElement = document.getElementById('tracking-marker');
@@ -4867,7 +4877,9 @@ const sectionTextElement = document.getElementById('section');
 const distanceTextElement = document.getElementById('distance');
 const distanceBarElement = document.getElementById('progress');
 
+
 // Replay mode
+/*
 const day1Element = document.getElementById('day1');
 const day2Element = document.getElementById('day2');
 const clockElement = document.getElementById('clock');
@@ -4912,6 +4924,7 @@ sliderElement.addEventListener('input', () => {
 	lastViewSwitch = Date.now() - clockOffset;
 	canvasElement.focus();
 });
+*/
 
 map.addControl(new mapboxgl.NavigationControl({visualizePitch: true}));
 map.addControl(new mapboxgl.FullscreenControl());
@@ -5303,7 +5316,7 @@ map.once('styledata', () => {
 	})
 
 	// Replay mode
-	let lastClockRefresh = 0;
+//	let lastClockRefresh = 0;
 
 	let initialDataLoadComplete = false;
 
@@ -5505,7 +5518,7 @@ map.once('styledata', () => {
 					distanceTextElement.innerText = (distance - baseDistance).toFixed(2);
 					distanceBarElement.style.width = `${(distance - baseDistance) / (nextDistance - baseDistance) * 100}%`;
 
-					if (i === trackingTeam) {
+					if (i === trackingTeam && teams[i].runners) {
 						const runner = teams[i].runners[trip * 5 + section];
 
 						showTrackingInfo();
@@ -5586,11 +5599,13 @@ map.once('styledata', () => {
 
 
 		// Replay mode
+/*
 		if (Math.floor(now / 1000) !== Math.floor(lastClockRefresh / 1000)) {
 			clockElement.innerText = new Date(now).toLocaleTimeString('ja-JP', {timeZone: 'JST'});
 			sliderElement.value = now - trips[trip].startTime;
 			lastClockRefresh = now;
 		}
+*/
 
 		requestAnimationFrame(frame);
 	};
