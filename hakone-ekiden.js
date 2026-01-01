@@ -4048,91 +4048,76 @@ const trips = [{
 	name: '往路',
 	center: routes[0][0],
 	bearing: 95,
-	startTime: 1704150000000,
-	placing: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
+	startTime: 1767308400000,
+	placing: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
 }, {
 	name: '復路',
 	center: routes[1][0],
 	bearing: -50,
-	startTime: 1704236400000,
-	placing: [3, 1, 9, 10, 6, 4, 8, 11, 7, 5, 13, 18, 2, 22, 23, 20, 16, 19, 15, 21, 14, 17, 12]
+	startTime: 1767394800000,
+	placing: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
 }];
 
 const sections = [[
 	{name: '<i class="far fa-flag"></i>スタート 読売新聞社前', index: 0, distance: 0, record: 21.124405481063278},
-	{name: '<i class="fas fa-flag"></i>鶴見中継所', index: 84, distance: 21.359121097519537, record: 21.035128937347521},
-	{name: '<i class="fas fa-flag"></i>戸塚中継所', index: 226, distance: 44.43348892351547, record: 21.591783083454362},
-	{name: '<i class="fas fa-flag"></i>平塚中継所', index: 359, distance: 65.81535189365847, record: 20.91787498752061},
-	{name: '<i class="fas fa-flag"></i>小田原中継所', index: 510, distance: 86.73322688117908, record: 17.801041523090455},
+	{name: '<i class="fas fa-flag"></i>鶴見中継所', index: 84, distance: 21.359121097519537, record: 21.131448530548298},
+	{name: '<i class="fas fa-flag"></i>戸塚中継所', index: 226, distance: 44.43348892351547, record: 21.591783083454366},
+	{name: '<i class="fas fa-flag"></i>平塚中継所', index: 359, distance: 65.81535189365847, record: 20.917874987520605},
+	{name: '<i class="fas fa-flag"></i>小田原中継所', index: 510, distance: 86.73322688117908, record: 18.028325358485226},
 	{name: '<i class="fas fa-flag-checkered"></i>ゴール 芦ノ湖', index: 1012, distance: 107.52088759314357}
 ], [
-	{name: '<i class="far fa-flag"></i>スタート 芦ノ湖', index: 0, distance: 0, record: 21.726307131090458},
-	{name: '<i class="fas fa-flag"></i>小田原中継所', index: 451, distance: 20.742588224877196, record: 20.698424540803006},
-	{name: '<i class="fas fa-flag"></i>平塚中継所', index: 604, distance: 42.01596900292473, record: 20.134210055242527},
-	{name: '<i class="fas fa-flag"></i>戸塚中継所', index: 761, distance: 63.43093853112574, record: 20.645162131824533},
-	{name: '<i class="fas fa-flag"></i>鶴見中継所', index: 916, distance: 86.57072442054573, record: 20.411998003192193},
+	{name: '<i class="far fa-flag"></i>スタート 芦ノ湖', index: 0, distance: 0, record: 21.917615969931877},
+	{name: '<i class="fas fa-flag"></i>小田原中継所', index: 451, distance: 20.742588224877196, record: 21.022281306881997},
+	{name: '<i class="fas fa-flag"></i>平塚中継所', index: 604, distance: 42.01596900292473, record: 20.13421005524253},
+	{name: '<i class="fas fa-flag"></i>戸塚中継所', index: 761, distance: 63.43093853112574, record: 20.645162131824527},
+	{name: '<i class="fas fa-flag"></i>鶴見中継所', index: 916, distance: 86.57072442054573, record: 20.411998003192203},
 	{name: '<i class="fas fa-flag-checkered"></i>ゴール 読売新聞社前', index: 1003, distance: 109.64762216304358}
 ]];
 
 const teams = [{
 	name: ''
 }, {
-	name: '駒澤大学',
-	shortName: '駒澤'
-}, {
-	name: '中央大学',
-	shortName: '中央'
-}, {
 	name: '青山学院大学',
 	shortName: '青山学院'
+}, {
+	name: '駒澤大学',
+	shortName: '駒澤'
 }, {
 	name: '國學院大學',
 	shortName: '國學院'
 }, {
-	name: '順天堂大学',
-	shortName: '順天堂'
-}, {
 	name: '早稲田大学',
 	shortName: '早稲田'
 }, {
-	name: '法政大学',
-	shortName: '法政'
-}, {
-	name: '創価大学',
-	shortName: '創価'
+	name: '中央大学',
+	shortName: '中央'
 }, {
 	name: '城西大学',
 	shortName: '城西'
 }, {
+	name: '創価大学',
+	shortName: '創価'
+}, {
+	name: '東京国際大学',
+	shortName: '東京国際'
+}, {
 	name: '東洋大学',
 	shortName: '東洋'
-}, {
-	name: '大東文化大学',
-	shortName: '大東文化'
-}, {
-	name: '明治大学',
-	shortName: '明治'
 }, {
 	name: '帝京大学',
 	shortName: '帝京'
 }, {
-	name: '日本体育大学',
-	shortName: '日本体育'
+	name: '中央学院大学',
+	shortName: '中央学院'
+}, {
+	name: '順天堂大学',
+	shortName: '順天堂'
+}, {
+	name: '山梨学院大学',
+	shortName: '山梨学院'
 }, {
 	name: '日本大学',
 	shortName: '日本'
-}, {
-	name: '立教大学',
-	shortName: '立教'
-}, {
-	name: '神奈川大学',
-	shortName: '神奈川'
-}, {
-	name: '国士舘大学',
-	shortName: '国士舘'
-}, {
-	name: '中央学院大学',
-	shortName: '中央学院'
 }, {
 	name: '東海大学',
 	shortName: '東海'
@@ -4140,11 +4125,20 @@ const teams = [{
 	name: '東京農業大学',
 	shortName: '東京農業'
 }, {
-	name: '駿河台大学',
-	shortName: '駿河台'
+	name: '神奈川大学',
+	shortName: '神奈川'
 }, {
-	name: '山梨学院大学',
-	shortName: '山梨学院'
+	name: '大東文化大学',
+	shortName: '大東文化'
+}, {
+	name: '日本体育大学',
+	shortName: '日本体育'
+}, {
+	name: '立教大学',
+	shortName: '立教'
+}, {
+	name: '関東学生連合',
+	shortName: '学生連合'
 }];
 
 // Live mode
@@ -4723,7 +4717,7 @@ function updatePlacing() {
 			const team = teams[v],
 				element = document.getElementById(`team-${i + 1}`);
 
-			team.marker.getElement().style.zIndex = 23 - i;
+			team.marker.getElement().style.zIndex = 21 - i;
 			element.innerText = `${i + 1}. ${team.name}`;
 		});
 }
